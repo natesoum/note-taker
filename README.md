@@ -18,12 +18,14 @@
   This project helps user keep their notes organized!
 
   I learned a ton! This wasn't one of the biggest project but learning how to work with node, express will help me a ton in the long run!
-
+  
+  Deployed Link: [GitHub Pages](https://natesoum.github.io/note-taker/)
+  Heroku Link: [Heroku](https://limitless-tundra-40308.herokuapp.com/)
   ## Usage
 
   Type your note title & description then save it once you are done! 
 
-  ## Mock Up
+  ## Mock Up 
   ![mockup](./assets/images/qrcode.jpg)
 
   ## Questions
