@@ -37,8 +37,29 @@ module.exports = function (app) {
             if (err) throw err;
         });
     });
-    //
   })
 
   // Attempt API DELETE REQUEST 
+  app.delete('/api/notes/:id', function (req, res) {
+    const deleteNoteId = req.params.id;
+
+    fs.readFile('./db/db.json', (err, data) => {
+        if (err) throw err;
+
+        dbData = JSON.parse(data);
+
+        for (let i = 0; i < dbData.length; i++) {
+            if (dbData[i].id === Number(deleteNoteId)) {
+                dbData.splice([i], 1);
+            }
+        }
+
+        dbString = JSON.stringify(dbData);
+
+        fs.writeFile('./db/db.json', dbString, (err, data) => {
+            if (err) throw err;
+        });
+    });
+    res.status(204).send();
+  });
 };

@@ -12,7 +12,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });
 
-  // Send to index.html if error 
+  // FALLBACK // Send to index.html if error 
   app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
