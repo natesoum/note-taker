@@ -24,7 +24,7 @@
   Type your note title & description then save it once you are done! 
 
   ## Mock Up
-  ![mockup](../assets/images/qrcode.jpg)
+  ![mockup](./assets/images/qrcode.jpg)
 
   ## Questions
 
